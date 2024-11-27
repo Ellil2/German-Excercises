@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Grammar Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        select, button {
+            margin: 10px 0;
+            padding: 5px;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .exercise, .explanation {
+            margin-top: 20px;
+        }
+
+.sentence-matching-game {
+    text-align: center;
+}
+
+.sentence-halves {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.column {
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.selected {
+    background-color: #007BFF;
+    color: white;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}
+   </style>
+</head>
+<body>
+    <h1>German Grammar Exercises</h1>
+    
+    <!-- Dropdowns -->
+    <label for="typeDropdown">Select a type of grammar rule:</label>
+    <select id="typeDropdown">
+        <option value="">-- Select Type --</option>
+        <option value="nouns">Noun Rules</option>
+        <option value="verbs">Verb Rules</option>
+        <option value="vocabulary">Vocabulary Training</option>
+    </select>
+
+    <label for="ruleDropdown">Select a specific rule:</label>
+    <select id="ruleDropdown" disabled>
+        <option value="">-- Select Specific Rule --</option>
+    </select>
+
+    <button id="generateExercise" disabled>Generate Exercise</button>
+
+    <!-- Output -->
+    <div class="output">
+        <div class="explanation" id="explanation"></div>
+        <div class="exercise" id="exercise"></div>
+    </div>
+	
+
+ <script src="script.js"></script> 
+</body>
+</html>
